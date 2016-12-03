@@ -1,6 +1,5 @@
 var stringCalculator = function(string){
-  console.log(string.length)
-  if (string.length = 0){
+  if (string === "0"){
     return(0);
   }
 };
