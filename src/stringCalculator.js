@@ -1,5 +1,5 @@
 var stringCalculator = function(string){
-  if (string === "0"){
+  if (string.length === 0){
     return(0);
   }
 };
