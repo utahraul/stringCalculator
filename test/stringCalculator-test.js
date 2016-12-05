@@ -8,5 +8,10 @@ describe('stringCalculator', function() {
     var emptyStringCalculator = stringCalculator("");
     expect(emptyStringCalculator).to.equal(0);
   });
+  
+    it('stringCalculator() should return the same number if an only one number string is passed in', function() {
+    var emptyStringCalculator = stringCalculator("1");
+    expect(emptyStringCalculator).to.equal(1);
+  });
 
 });
