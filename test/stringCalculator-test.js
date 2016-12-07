@@ -9,9 +9,14 @@ describe('stringCalculator', function() {
     expect(emptyStringCalculator).to.equal(0);
   });
   
-    it('stringCalculator() should return the same number if an only one number string is passed in', function() {
+  it('stringCalculator() should return the same number if an only one number string is passed in', function() {
     var oneNumberStringCalculator = stringCalculator("1");
-    expect(oneNumberStringCalculator).to.equal("1");
+    expect(oneNumberStringCalculator).to.equal(1);
+  });
+
+  it('stringCalculator() should return the adddition of two numbers if a two numbers string is passed in', function() {
+    var oneNumberStringCalculator = stringCalculator("1,2");
+    expect(oneNumberStringCalculator).to.equal(3);
   });
 
 });
