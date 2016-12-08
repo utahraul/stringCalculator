@@ -19,4 +19,9 @@ describe('stringCalculator', function() {
     expect(oneNumberStringCalculator).to.equal(3);
   });
 
+  it('stringCalculator() should return the adddition of n numbers if a n numbers string is passed in', function() {
+    var oneNumberStringCalculator = stringCalculator("1,2,3,4,5");
+    expect(oneNumberStringCalculator).to.equal(15);
+  });
+
 });

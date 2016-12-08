@@ -8,9 +8,12 @@ var stringCalculator = function(string){
           return(parseInt(string));
         }
         else{
-          return(parseInt(stringSplitted[0]) + parseInt(stringSplitted[1]))
+          var total = 0;
+          for (var i=0; i < stringSplitted.length; i++){
+            total = total + parseInt(stringSplitted[i]);
+          }
+          return total;
         }
-        
   }
 };
 
