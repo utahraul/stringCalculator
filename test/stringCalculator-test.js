@@ -24,4 +24,9 @@ describe('stringCalculator', function() {
     expect(oneNumberStringCalculator).to.equal(15);
   });
 
+  it('stringCalculator() should return the adddition of n numbers if a n numbers string is passed in separate by commas or lines', function() {
+    var oneNumberStringCalculator = stringCalculator("1\n2,3");
+    expect(oneNumberStringCalculator).to.equal(6);
+  });
+
 });

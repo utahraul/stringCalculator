@@ -3,7 +3,7 @@ var stringCalculator = function(string){
     return(0);
   }
   else {
-        var stringSplitted = string.split(",");
+        var stringSplitted = string.split(/,|\n/);
         if (stringSplitted.length === 1) {
           return(parseInt(string));
         }
